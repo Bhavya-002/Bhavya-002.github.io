@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#home">Contact</a></li>
+            <li><a href="#home">Education</a></li>
+            <li><a href="#home">Hobbies</a></li>
+            <li class="topnav-right"><a href="#home">Useless Quotes</a></li>
+            <li class="topnav-right"><a href="#home">Life</a></li>
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+        </ul>
+    </nav>
+    <div class="container" id="section-1-gradient">
+
+    </div>
+
+
+
+    <script>
+    function dropdownMenu(){
+        var x = document.getElementById("dropdownClick");
+        if(x.className === "topnav"){
+            x.className += " responsive";
+            // change topnav to topnav.responsive
+        }
+        else{
+            x.className = "topnav";
+        }
+    }
+    </script>
+</body>
+
+</html>
